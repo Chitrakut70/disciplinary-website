@@ -5,35 +5,55 @@
 }
 .header-class
 {
-    display: flex;
     background: var(--navy);
     color: var(--white);
     opacity: 95%;
+    height:8vh;
 }
 .header-name
 {
-    text-align: left;
-    font-size: 2.5vw;
-    margin: auto
+    float: left;
+    font-size: 2.2rem;
+     margin: .5rem; 
 }
-ul{
+ul
+{
     list-style-type: none;
 }
 .header-components
 {
-    font-size: 1.5vw;
-    display: flex;
-    margin: auto;
+    float: right;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 .header-components li
 {
+    display: inline;
     margin: 1vw;
 }
-
+@media screen and (max-width: 1200px)
+{
+    .header-name
+    {
+        font-size: 2rem;
+    }
+    .header-components
+    {
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width: 835px)
 {
     .header-components
     {
         display: none;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .header-name
+    {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }

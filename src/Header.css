@@ -1,0 +1,39 @@
+:root
+{
+    --navy:#0a192f;
+    --white:#CCD6F6;
+}
+.header-class
+{
+    display: flex;
+    background: var(--navy);
+    color: var(--white);
+    opacity: 95%;
+}
+.header-name
+{
+    text-align: left;
+    font-size: 2.5vw;
+    margin: auto
+}
+ul{
+    list-style-type: none;
+}
+.header-components
+{
+    font-size: 1.5vw;
+    display: flex;
+    margin: auto;
+}
+.header-components li
+{
+    margin: 1vw;
+}
+
+@media screen and (max-width: 835px)
+{
+    .header-components
+    {
+        display: none;
+    }
+}
